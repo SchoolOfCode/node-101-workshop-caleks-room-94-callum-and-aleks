@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/SchoolOfCode/node-101-workshop-caleks-room-94-callum-and-aleks/issues"
   },
-  "homepage": "https://github.com/SchoolOfCode/node-101-workshop-caleks-room-94-callum-and-aleks#readme"
+  "homepage": "https://github.com/SchoolOfCode/node-101-workshop-caleks-room-94-callum-and-aleks#readme",
+  "dependencies": {
+    "chalk": "^5.0.0"
+  }
 }
