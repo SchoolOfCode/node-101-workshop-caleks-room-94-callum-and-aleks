@@ -16,16 +16,27 @@ let myCollection = [
     }
   ];
 
-  console.log(myCollection);
+
 
 function describeItem(item) {
+  let outPut = "";
+
     myCollection.forEach(function (params) { 
-        if (params.name === item) {
-            return `"I have counts ${}`
+
+        if (params.name === item && params.count == 1)  {
+            outPut =  `"I have a ${params.name} I like ${params.whatILike} about it`;
+        }else if(params.name === item && params.count>1){
+          outPut =  `"I have ${params.count} ${params.name}s I like ${params.whatILike} about it`;
         }
         
     })
+
+
+    return outPut;
 }
+
+
+console.log(describeItem("School of Code hat"));
 
   /*2c. Create a function called describeItem, which should take in an item as a parameter (the argument handed to this function would be an item from our collection). The function should console.log a message according to how many of the item you have.
 
