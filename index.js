@@ -18,7 +18,14 @@ let myCollection = [
 
   console.log(myCollection);
 
-
+function describeItem(item) {
+    myCollection.forEach(function (params) { 
+        if (params.name === item) {
+            return `"I have counts ${}`
+        }
+        
+    })
+}
 
   /*2c. Create a function called describeItem, which should take in an item as a parameter (the argument handed to this function would be an item from our collection). The function should console.log a message according to how many of the item you have.
 
